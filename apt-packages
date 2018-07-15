@@ -1,0 +1,9 @@
+libxml2-dev 
+libxslt1-dev 
+imagemagick 
+libmapserver1 
+gdal-bin 
+libgdal-dev 
+ruby-mapscript 
+bundler 
+nodejs
