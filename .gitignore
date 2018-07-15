@@ -18,9 +18,10 @@
 /tmp
 
 # Ignore the database config
-config/database.yml
-config/application.yml
-config/secrets.yml
+# Update: change these to pull env variables
+# config/database.yml
+# config/application.yml
+# config/secrets.yml
 
 nbproject
 *.*~

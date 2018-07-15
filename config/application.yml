@@ -1,0 +1,50 @@
+defaults: &defaults
+  email: <%= ENV["default_email"] %>
+  addthis_twitter_user: <%= ENV["addthis_twitter_user"] %>
+  addthis_user: <%= ENV["addthis_user"] %>
+  google_analytics_code: <%= ENV["google_analytics_code"] %>
+  google_analytics_cookie_path: <%= ENV["google_analytics_cookie_path"] %>
+  src_maps_dir: <%= ENV["src_maps_dir"] %>
+  dst_maps_dir: <%= ENV["dst_maps_dir"] %>
+  mapzen_key: <%= ENV["mapzen_key"] %>
+  geocode_country: <%= ENV["geocode_country"] %>
+  geoparse_geocodexyz_key: <%= ENV["geoparse_geocodexyz_key"] %>
+  geoparse_region: <%= ENV["geoparse_region"] %>
+  geoparse_enable: <%= ENV["geoparse_enable"] %>
+  host: <%= ENV["host"] %>
+  site_name: <%= ENV["site_name"] %>
+  full_site_name: <%= ENV["full_site_name"] %>
+  reply_to: <%= ENV["reply_to"] %>
+  omniauth_osm_key: <%= ENV["omniauth_osm_key"] %>
+  omniauth_osm_secret: <%= ENV["omniauth_osm_secret"] %>
+  omniauth_twitter_key: <%= ENV["omniauth_twitter_key"] %>
+  omniauth_twitter_secret: <%= ENV["omniauth_twitter_secret"] %>
+  omniauth_mediawiki_site: <%= ENV["omniauth_mediawiki_site"] %>
+  omniauth_mediawiki_key: <%= ENV["omniauth_mediawiki_key"] %>
+  omniauth_mediawiki_secret: <%= ENV["omniauth_mediawiki_secret"] %>
+  omniauth_github_key: <%= ENV["omniauth_github_key"] %>
+  omniauth_github_secret: <%= ENV["omniauth_github_secret"] %>
+  omniauth_facebook_key: <%= ENV["omniauth_facebook_key"] %>
+  omniauth_facebook_secret: <%= ENV["omniauth_facebook_secret"] %>
+  id_key: <%= ENV["id_key"] %>
+  id_secret: <%= ENV["id_secret"] %>
+  mapbox_access_token: <%= ENV["mapbox_access_token"] %>
+  localeapp_api_key: <%= ENV["localeapp_api_key"] %>
+  import_maps_sftp_path: <%= ENV["import_maps_sftp_path"] %>
+  #gdal_path: <%= ENV["gdal_path"] %>
+  gdal_path: <%= ENV["gdal_path"] %>
+  gdal_memory_limit: <%= ENV["gdal_memory_limit"] %>
+  disabled_site: <%= ENV["disabled_site"] %>
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+  email: <%= ENV["test_email"] %>
+
+production:
+  <<: *defaults
+  email: <%= ENV["production_email"] %>
+  src_maps_dir: <%= ENV["src_maps_dir"] %>
+  dst_maps_dir: <%= ENV["dst_maps_dir"] %>
