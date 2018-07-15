@@ -6,5 +6,6 @@ gdal-bin
 libgdal-dev 
 ruby-mapscript 
 libmapscript-ruby
+libmapserver2
 bundler 
 nodejs
