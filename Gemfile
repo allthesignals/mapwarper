@@ -64,6 +64,7 @@ gem 'redis-rails', '~> 5'
 gem "rails-i18n"
 
 gem 'pg_search'
+gem 'ruby_mapscript'
 
 gem 'rails-api'
 gem 'active_model_serializers', github: 'rails-api/active_model_serializers', tag: 'v0.10.5'
