@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update -qq && apt-get install -y ruby libruby ruby-dev \
     build-essential git-core libxml2-dev libxslt-dev imagemagick \
     libmapserver2 gdal-bin libgdal-dev ruby-mapscript nodejs \
-    tzdata \
+    tzdata redis-server \
      && rm -rf /var/lib/apt/lists/*
 
 ENV BUNDLE_PATH /bundle
@@ -31,7 +31,7 @@ COPY . .
 
 # Expose port 5000 to the Docker host, so we can access it
 # from the outside.
-EXPOSE 5000
+EXPOSE 3000
 
 # The main command to run when the container starts. Also
 # tell the Rails dev server to bind to all interfaces by
