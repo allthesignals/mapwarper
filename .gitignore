@@ -50,3 +50,5 @@ vendor/bundle
 
 #test files
 test/test_files/*
+
+.env
