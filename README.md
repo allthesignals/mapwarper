@@ -69,6 +69,17 @@ Groups of maps can be made into "mosaics" that will stictch together the composi
 
 ## Installation Dependencies
 
+### Docker
+
+ 1. Create a `.env` file with database and app configuration (see yaml files in config/)
+ 2. Run these commands:
+
+`docker-compose build`
+`docker-compose up`
+
+### Manual
+
+
 Check out the Vagrant section lower down in the readme if you want to get started quickly. Also view the lib/vagrant/provision.sh file to see what needs to get installed.
 
 on Ubuntu 14.04 LTS
